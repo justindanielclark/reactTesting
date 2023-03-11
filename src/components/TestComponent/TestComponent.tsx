@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 
 type Props = {
+  testing?: boolean;
   initialState?: number;
   heading?: string;
   listContent?: string[];
 };
 
-function TestComponent({ heading, listContent, initialState }: Props) {
+function TestComponent({ heading, listContent, initialState, testing }: Props) {
   const [state, setState] = useState(initialState ? initialState : 0);
   const handleClickIncrementButton = (e: React.MouseEvent): void => {
     setState(state + 1);
@@ -24,7 +25,7 @@ function TestComponent({ heading, listContent, initialState }: Props) {
     );
   };
   return (
-    <div data-testid="TestComponentRoot">
+    <div data-testid={testing ? "TestComponentRoot" : undefined}>
       <h1>{heading ? heading : "Default Heading"}</h1>
       {listContent ? renderList(listContent) : <p>No Data Provided</p>}
       <div>

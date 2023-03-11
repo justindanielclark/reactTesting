@@ -38,3 +38,97 @@ exports[`<TestComponent/> : Snapshot Comparison 1`] = `
   </button>
 </div>
 `;
+
+exports[`<TestComponent/> : Snapshot with Custom Header 1`] = `
+<body>
+  <div>
+    <div
+      data-testid="TestComponentRoot"
+    >
+      <h1>
+        Custom Header
+      </h1>
+      <p>
+        No Data Provided
+      </p>
+      <div>
+        <p>
+          State Values:
+        </p>
+        <p
+          role="log"
+        >
+          0
+        </p>
+      </div>
+      <button
+        class="bg-green-900 p-1 rounded mx-2"
+        name="incrementBtn"
+        role="button"
+        type="button"
+      >
+        Increment
+      </button>
+      <button
+        class="bg-red-900 p-1 rounded mx-2"
+        name="decrementBtn"
+        role="button"
+        type="button"
+      >
+        Decrement
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`<TestComponent/> : Snapshot with ListItems 1`] = `
+<body>
+  <div>
+    <div
+      data-testid="TestComponentRoot"
+    >
+      <h1>
+        Default Heading
+      </h1>
+      <ul>
+        <li>
+          Justin
+        </li>
+        <li>
+          Natasha
+        </li>
+        <li>
+          Steve
+        </li>
+      </ul>
+      <div>
+        <p>
+          State Values:
+        </p>
+        <p
+          role="log"
+        >
+          0
+        </p>
+      </div>
+      <button
+        class="bg-green-900 p-1 rounded mx-2"
+        name="incrementBtn"
+        role="button"
+        type="button"
+      >
+        Increment
+      </button>
+      <button
+        class="bg-red-900 p-1 rounded mx-2"
+        name="decrementBtn"
+        role="button"
+        type="button"
+      >
+        Decrement
+      </button>
+    </div>
+  </div>
+</body>
+`;
